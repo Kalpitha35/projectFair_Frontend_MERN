@@ -698,6 +698,8 @@
             - cors package : used to enable cross origin Resource Shairing- npm i cors
             - dotenv package : used to load content .env file into process object - npm i dotenv
             - mongoose package : used to commuicate node js between Mongodb
+            - jsonwebtoken - used for authorization
+            - multer - used for handling multipart/formdata
         - create .env file in server folder, which used to store environmenal variables of a project/app
         - create .gitignore file in server folder, which used to store files/folder to be ignored while adding to git, and add node_modules,.env into the file contents
         - create index.js in server folder file to define express server for resolving client request from browser

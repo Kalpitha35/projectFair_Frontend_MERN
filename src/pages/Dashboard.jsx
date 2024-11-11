@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Header from '../components/Header'
 import View from '../components/View'
 import Profile from '../components/Profile'
+import { tokenAuthContext } from '../contexts/AuthContextApi'
 
 
 const Dashboard = () => {
+
+  const {isAuthorised,setIsAuthorised} = useContext(tokenAuthContext)
   const [username,setUsername] = useState("")
   useEffect(()=>{
     if(sessionStorage.getItem("user")){
